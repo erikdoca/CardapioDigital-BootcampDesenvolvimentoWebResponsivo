@@ -46,4 +46,4 @@ Depois, acesse `http://localhost:8000`.
 
 - Erik Vinicius Pinheiro Doca
 - Joao Pedro Ferreira Viana
-
+- Gustavo da Silva Sebastião
