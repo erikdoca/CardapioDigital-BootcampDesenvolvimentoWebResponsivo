@@ -1,311 +1,413 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bar do Seu Tonho — Cardápio</title>
-    <meta
-      name="description"
-      content="Cardápio digital do Bar do Seu Tonho: petiscos, pratos e bebidas de boteco desde 1978."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Spectral:ital,wght@0,400;0,500;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header class="topo" id="topo">
-      <div class="topo__conteudo">
-        <a href="#topo" class="marca">
-          <span class="marca__nome">Seu Tonho</span>
-          <span class="marca__desde">desde 1978</span>
-        </a>
-        <button
-          class="menu-toggle"
-          id="menuToggle"
-          aria-expanded="false"
-          aria-controls="navPrincipal"
-          aria-label="Abrir menu"
-        >
-          <span></span><span></span><span></span>
-        </button>
-        <nav class="nav" id="navPrincipal">
-          <a href="#sobre">A casa</a>
-          <a href="#cardapio">Cardápio</a>
-          <a href="#galeria">Petiscos</a>
-          <a href="#contato">Endereço</a>
-        </nav>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Real Supermercado — Qualidade e economia perto de você</title>
+<meta name="description" content="Real Supermercado em Pederneiras, SP. Ofertas da semana, frete grátis na região e produtos frescos todos os dias.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ===================== TOPBAR ===================== -->
+<div class="topbar">
+  <div class="container">
+    <span class="topbar-tag">🍃 Frete grátis acima de R$ 99 em Pederneiras</span>
+    <a href="https://wa.me/5514997127128" target="_blank" rel="noopener">📞 (14) 99712-7128</a>
+  </div>
+</div>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="container header-main">
+    <a class="brand" href="#topo" aria-label="Real Supermercado — página inicial">
+      <img src="assets/logo.jpg" alt="Logotipo Real Supermercado">
+      <span>
+        <span class="brand-name" style="display:block;">REAL</span>
+        <span class="brand-tag">Supermercado</span>
+      </span>
+    </a>
+
+    <div class="header-actions">
+      <a class="icon-btn" href="#contato" aria-label="Ver localização e horários">📍</a>
+      <button class="icon-btn" type="button" id="cartToggle" aria-label="Ver carrinho" aria-haspopup="dialog" aria-expanded="false" aria-controls="cartDrawer">
+        🛒<span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="siteNav">☰</button>
+    </div>
+  </div>
+
+  <nav class="site-nav" id="siteNav">
+    <div class="container">
+      <ul>
+        <li><a href="#topo">Início</a></li>
+        <li><a href="#ofertas">Ofertas da semana</a></li>
+        <li><a href="#departamentos">Departamentos</a></li>
+        <li><a href="#beneficios">Benefícios</a></li>
+        <li><a href="#contato">Loja &amp; contato</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main id="conteudo">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="topo">
+    <div class="container">
+      <div>
+        <span class="hero-badge">🔥 Ofertas válidas até domingo</span>
+        <h1>O mercado do seu bairro, com preço que cabe no seu bolso</h1>
+        <p>Produtos frescos selecionados todos os dias, entrega rápida em Pederneiras e o carinho de sempre no atendimento.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary-cta" href="#ofertas">Ver ofertas da semana</a>
+          <a class="btn btn-outline" href="#contato" style="border-color:#C2C1FF;color:#fff;">Como chegar</a>
+        </div>
       </div>
-    </header>
+      <div class="hero-figure">
+        <img src="assets/logo.jpg" alt="Fachada ilustrativa do Real Supermercado" style="background:#fff;padding:2rem;">
+      </div>
+    </div>
+  </section>
 
-    <main>
-      <!-- HERO -->
-      <section class="hero" id="hero">
-        <div class="hero__texto">
-          <p class="hero__eyebrow">Boteco de esquina · Vila Progresso</p>
-          <h1 class="hero__titulo">
-            Mesa posta,<br />copo cheio<br /><em>e conversa fiada.</em>
-          </h1>
-          <p class="hero__sub">
-            Petiscos fritos na hora, cerveja gelada de verdade e aquele prato de
-            almoço que lembra casa da avó. Desde 1978 na mesma calçada.
-          </p>
-          <div class="hero__acoes">
-            <a href="#cardapio" class="botao botao--principal">Ver cardápio</a>
-            <a href="#contato" class="botao botao--fantasma">Como chegar</a>
-            <span class="selo selo--pill" data-selo aria-live="polite">
-              <span class="selo__ponto" aria-hidden="true"></span>
-              <span class="selo__texto">carregando…</span>
-            </span>
-          </div>
-        </div>
-        <div class="hero__azulejos" aria-hidden="true">
-          <div class="ladrilho ladrilho--1"></div>
-          <div class="ladrilho ladrilho--2"></div>
-          <div class="ladrilho ladrilho--3"></div>
-          <div class="ladrilho ladrilho--4"></div>
-          <div class="ladrilho ladrilho--5"></div>
-          <div class="ladrilho ladrilho--6"></div>
-        </div>
-      </section>
-
-      <!-- SOBRE -->
-      <section class="sobre" id="sobre">
-        <div class="sobre__historia">
-          <h2 class="titulo-secao">Uma casa, três gerações</h2>
-          <p>
-            O Tonho abriu o bar num fim de tarde de 1978, com quatro mesas e uma
-            geladeira emprestada. Hoje quem atende o balcão é o neto, mas a
-            receita do torresmo não mudou uma vírgula — e o troco ainda é feito
-            de cabeça.
-          </p>
-        </div>
-        <ul class="destaques">
-          <li class="destaque">
-            <span class="destaque__numero">47</span>
-            <span class="destaque__label">anos de casa aberta</span>
-          </li>
-          <li class="destaque">
-            <span class="destaque__numero">12</span>
-            <span class="destaque__label">chopes na torneira</span>
-          </li>
-          <li class="destaque">
-            <span class="destaque__numero">6</span>
-            <span class="destaque__label">receitas da família Tonho</span>
-          </li>
-        </ul>
-      </section>
-
-      <!-- CARDÁPIO -->
-      <section class="cardapio" id="cardapio">
-        <h2 class="titulo-secao titulo-secao--claro">O cardápio</h2>
-        <div class="abas" role="tablist" aria-label="Categorias do cardápio">
-          <button
-            class="aba is-ativa"
-            role="tab"
-            aria-selected="true"
-            aria-controls="painel-petiscos"
-            id="aba-petiscos"
-            data-alvo="painel-petiscos"
-          >
-            Petiscos
-          </button>
-          <button
-            class="aba"
-            role="tab"
-            aria-selected="false"
-            aria-controls="painel-pratos"
-            id="aba-pratos"
-            data-alvo="painel-pratos"
-          >
-            Pratos
-          </button>
-          <button
-            class="aba"
-            role="tab"
-            aria-selected="false"
-            aria-controls="painel-bebidas"
-            id="aba-bebidas"
-            data-alvo="painel-bebidas"
-          >
-            Bebidas
-          </button>
-        </div>
-        <div class="paineis">
-          <ul
-            class="lista-cardapio"
-            id="painel-petiscos"
-            role="tabpanel"
-            aria-labelledby="aba-petiscos"
-          >
-            <li class="item-cardapio">
-              <div class="item-cardapio__linha">
-                <span>Torresmo do Tonho</span><span class="pontilhado"></span
-                ><span class="preco">R$ 28</span>
-              </div>
-              <p class="item-cardapio__desc">
-                Crocante por fora, macio por dentro, com farofa de limão.
-              </p>
-            </li>
-            <li class="item-cardapio">
-              <div class="item-cardapio__linha">
-                <span>Bolinho de bacalhau (6un)</span
-                ><span class="pontilhado"></span
-                ><span class="preco">R$ 32</span>
-              </div>
-              <p class="item-cardapio__desc">
-                Receita da dona Zilá, feito na hora do pedido.
-              </p>
-            </li>
-            <li class="item-cardapio">
-              <div class="item-cardapio__linha">
-                <span>Pastel de carnaguda</span><span class="pontilhado"></span
-                ><span class="preco">R$ 22</span>
-              </div>
-              <p class="item-cardapio__desc">
-                Massa fininha, recheio generoso, acompanha molho de pimenta
-                caseiro.
-              </p>
-            </li>
-            <li class="item-cardapio">
-              <div class="item-cardapio__linha">
-                <span>Isca de peixe frita</span><span class="pontilhado"></span
-                ><span class="preco">R$ 34</span>
-              </div>
-              <p class="item-cardapio__desc">
-                Com molho tártaro da casa e limão.
-              </p>
-            </li>
-          </ul>
-          <ul
-            class="lista-cardapio"
-            id="painel-pratos"
-            role="tabpanel"
-            aria-labelledby="aba-pratos"
-            hidden
-          >
-            <li class="item-cardapio">
-              <div class="item-cardapio__linha">
-                <span>Feijoada de sábado</span><span class="pontilhado"></span
-                ><span class="preco">R$ 42</span>
-              </div>
-              <p class="item-cardapio__desc">
-                Só aos sábados, no ponto certo, com couve e farofa.
-              </p>
-            </li>
-            <li class="item-cardapio">
-              <div class="item-cardapio__linha">
-                <span>Picadinho com arroz</span><span class="pontilhado"></span
-                ><span class="preco">R$ 38</span>
-              </div>
-              <p class="item-cardapio__desc">
-                Carne desfiada, ovo frito e banana à milanesa.
-              </p>
-            </li>
-            <li class="item-cardapio">
-              <div class="item-cardapio__linha">
-                <span>Frango à passarinho</span><span class="pontilhado"></span
-                ><span class="preco">R$ 40</span>
-              </div>
-              <p class="item-cardapio__desc">
-                Bem temperado, servido com mandioca frita.
-              </p>
-            </li>
-          </ul>
-          <ul
-            class="lista-cardapio"
-            id="painel-bebidas"
-            role="tabpanel"
-            aria-labelledby="aba-bebidas"
-            hidden
-          >
-            <li class="item-cardapio">
-              <div class="item-cardapio__linha">
-                <span>Chope claro (300ml)</span><span class="pontilhado"></span
-                ><span class="preco">R$ 9</span>
-              </div>
-              <p class="item-cardapio__desc">
-                Sempre geladinho, direto da torneira.
-              </p>
-            </li>
-            <li class="item-cardapio">
-              <div class="item-cardapio__linha">
-                <span>Caipirinha da casa</span><span class="pontilhado"></span
-                ><span class="preco">R$ 18</span>
-              </div>
-              <p class="item-cardapio__desc">
-                Limão, cachaça de alambique e açúcar na medida certa.
-              </p>
-            </li>
-            <li class="item-cardapio">
-              <div class="item-cardapio__linha">
-                <span>Refrigerante lata</span><span class="pontilhado"></span
-                ><span class="preco">R$ 7</span>
-              </div>
-              <p class="item-cardapio__desc">Coca-Cola, Guaraná ou Sprite.</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- GALERIA -->
-      <section class="galeria" id="galeria">
-        <h2 class="titulo-secao">O que sai mais da cozinha</h2>
-        <div class="galeria__grade">
-          <div class="cartao-galeria cartao-galeria--mostarda">
-            <span class="cartao-galeria__icone" aria-hidden="true">🍖</span>
-            <span class="cartao-galeria__nome">Torresmo</span>
-          </div>
-          <div class="cartao-galeria cartao-galeria--tijolo">
-            <span class="cartao-galeria__icone" aria-hidden="true">🍺</span>
-            <span class="cartao-galeria__nome">Chope</span>
-          </div>
-          <div class="cartao-galeria cartao-galeria--verde">
-            <span class="cartao-galeria__icone" aria-hidden="true">🥟</span>
-            <span class="cartao-galeria__nome">Pastel</span>
-          </div>
-          <div class="cartao-galeria cartao-galeria--mostarda">
-            <span class="cartao-galeria__icone" aria-hidden="true">🍋</span>
-            <span class="cartao-galeria__nome">Caipirinha</span>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- CONTATO -->
-    <footer class="contato" id="contato">
-      <div class="contato__grade">
+  <!-- ===================== DEPARTAMENTOS ===================== -->
+  <section class="section" id="departamentos">
+    <div class="container">
+      <div class="section-head">
         <div>
-          <h2 class="titulo-secao titulo-secao--claro">
-            Aqui a gente te espera
-          </h2>
-          <p class="contato__endereco">
-            Rua das Palmeiras, 214 — Vila Progresso
-          </p>
-          <p class="contato__horario">Terça a domingo, 17h às 00h</p>
-          <span class="selo selo--carimbo" data-selo aria-hidden="true">
-            <span class="selo__texto">—</span>
-          </span>
-        </div>
-        <div class="contato__acao">
-          <a href="tel:+551499999999" class="botao botao--principal"
-            >(14) 99999-9999</a
-          >
-          <p class="contato__rodape-nota">
-            Não fazemos entrega — mas guardamos sua mesa.
-          </p>
+          <h2>Departamentos</h2>
+          <p>Encontre rapidinho o que você precisa</p>
         </div>
       </div>
-      <p class="copy">
-        © 2026 Bar do Seu Tonho. Projeto acadêmico — bootcamp de desenvolvimento
-        web responsivo.
-      </p>
-    </footer>
 
-    <script src="js/status-bar.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+      <div class="category-rail">
+        <a class="category-card" href="#ofertas">
+          <span class="icon-wrap">🥩</span>
+          <span class="label">Açougue</span>
+        </a>
+        <a class="category-card" href="#ofertas">
+          <span class="icon-wrap">🥬</span>
+          <span class="label">Hortifruti</span>
+        </a>
+        <a class="category-card" href="#ofertas">
+          <span class="icon-wrap">🥛</span>
+          <span class="label">Laticínios</span>
+        </a>
+        <a class="category-card" href="#ofertas">
+          <span class="icon-wrap">🍞</span>
+          <span class="label">Padaria</span>
+        </a>
+        <a class="category-card" href="#ofertas">
+          <span class="icon-wrap">🧴</span>
+          <span class="label">Limpeza</span>
+        </a>
+        <a class="category-card" href="#ofertas">
+          <span class="icon-wrap">🧃</span>
+          <span class="label">Bebidas</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== OFERTAS ===================== -->
+  <section class="section" id="ofertas" style="background:var(--color-bg);">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Ofertas da semana</h2>
+          <p>Preços válidos enquanto durarem os estoques</p>
+        </div>
+      </div>
+
+      <div class="chip-row" role="tablist" aria-label="Filtrar ofertas">
+        <button class="chip is-active" type="button">Todas</button>
+        <button class="chip" type="button">Hortifruti</button>
+        <button class="chip" type="button">Açougue</button>
+        <button class="chip" type="button">Mercearia</button>
+        <button class="chip" type="button">Bebidas</button>
+      </div>
+
+      <div class="product-grid" id="productGrid">
+        <!-- cards inseridos via template abaixo (repetidos manualmente para o projeto) -->
+
+        <article class="product-card" data-name="Alcatra bovina">
+          <div class="product-media">
+            🥩
+            <span class="product-tag promo">-20%</span>
+          </div>
+          <div class="product-body">
+            <span class="product-unit">preço por kg</span>
+            <h3 class="product-title">Alcatra bovina resfriada</h3>
+            <div class="product-price">
+              <span class="old">R$ 44,90</span>
+              <span class="now">R$ 35<span class="cents">,90</span></span>
+            </div>
+            <div class="product-cta">
+              <button class="add-btn" type="button">Adicionar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-name="Tomate">
+          <div class="product-media">
+            🍅
+            <span class="product-tag frete">Fresco</span>
+          </div>
+          <div class="product-body">
+            <span class="product-unit">bandeja 1kg</span>
+            <h3 class="product-title">Tomate italiano selecionado</h3>
+            <div class="product-price">
+              <span class="now">R$ 6<span class="cents">,49</span></span>
+            </div>
+            <div class="product-cta">
+              <button class="add-btn" type="button">Adicionar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-name="Leite integral">
+          <div class="product-media">
+            🥛
+          </div>
+          <div class="product-body">
+            <span class="product-unit">caixa 1L</span>
+            <h3 class="product-title">Leite integral UHT</h3>
+            <div class="product-price">
+              <span class="now">R$ 4<span class="cents">,79</span></span>
+            </div>
+            <div class="product-cta">
+              <button class="add-btn" type="button">Adicionar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-name="Pão francês">
+          <div class="product-media">
+            🥖
+            <span class="product-tag promo">Da hora</span>
+          </div>
+          <div class="product-body">
+            <span class="product-unit">preço por kg</span>
+            <h3 class="product-title">Pão francês fresquinho</h3>
+            <div class="product-price">
+              <span class="now">R$ 12<span class="cents">,90</span></span>
+            </div>
+            <div class="product-cta">
+              <button class="add-btn" type="button">Adicionar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-name="Detergente">
+          <div class="product-media">🧴</div>
+          <div class="product-body">
+            <span class="product-unit">unidade 500ml</span>
+            <h3 class="product-title">Detergente neutro concentrado</h3>
+            <div class="product-price">
+              <span class="now">R$ 2<span class="cents">,29</span></span>
+            </div>
+            <div class="product-cta">
+              <button class="add-btn" type="button">Adicionar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-name="Suco de laranja">
+          <div class="product-media">
+            🍊
+            <span class="product-tag frete">Orgânico</span>
+          </div>
+          <div class="product-body">
+            <span class="product-unit">garrafa 1L</span>
+            <h3 class="product-title">Suco de laranja natural</h3>
+            <div class="product-price">
+              <span class="old">R$ 9,90</span>
+              <span class="now">R$ 7<span class="cents">,90</span></span>
+            </div>
+            <div class="product-cta">
+              <button class="add-btn" type="button">Adicionar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-name="Arroz">
+          <div class="product-media">🍚</div>
+          <div class="product-body">
+            <span class="product-unit">pacote 5kg</span>
+            <h3 class="product-title">Arroz branco tipo 1</h3>
+            <div class="product-price">
+              <span class="now">R$ 24<span class="cents">,90</span></span>
+            </div>
+            <div class="product-cta">
+              <button class="add-btn" type="button">Adicionar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-name="Refrigerante">
+          <div class="product-media">
+            🥤
+            <span class="product-tag promo">-15%</span>
+          </div>
+          <div class="product-body">
+            <span class="product-unit">garrafa 2L</span>
+            <h3 class="product-title">Refrigerante cola</h3>
+            <div class="product-price">
+              <span class="old">R$ 9,49</span>
+              <span class="now">R$ 7<span class="cents">,99</span></span>
+            </div>
+            <div class="product-cta">
+              <button class="add-btn" type="button">Adicionar</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BENEFÍCIOS ===================== -->
+  <section class="benefits" id="beneficios">
+    <div class="container">
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <span class="benefit-icon">🚚</span>
+          <div>
+            <h3>Frete grátis</h3>
+            <p>Em compras acima de R$ 99 em Pederneiras e região</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <span class="benefit-icon">🥗</span>
+          <div>
+            <h3>Sempre fresco</h3>
+            <p>Hortifruti selecionado e reposto diariamente</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <span class="benefit-icon">💳</span>
+          <div>
+            <h3>Pague como quiser</h3>
+            <p>Pix, cartão, vale-alimentação e dinheiro</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <span class="benefit-icon">⭐</span>
+          <div>
+            <h3>Clube Real</h3>
+            <p>Descontos exclusivos para clientes cadastrados</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CLUBE REAL / NEWSLETTER ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="club-banner">
+        <div>
+          <h2>Entre para o Clube Real</h2>
+          <p>Cadastre seu e-mail e receba as ofertas da semana antes de todo mundo.</p>
+        </div>
+        <form class="club-form" id="clubForm">
+          <label class="visually-hidden" for="clubEmail">Seu e-mail</label>
+          <input id="clubEmail" type="email" placeholder="seu@email.com" required>
+          <button type="submit">Quero receber</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer" id="contato">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <div class="footer-brand">
+        <img src="assets/logo.jpg" alt="Logotipo Real Supermercado">
+        <span>Real Supermercado</span>
+      </div>
+      <p>O mercado de bairro que une a tradição do atendimento próximo com a praticidade que você merece.</p>
+      <div class="footer-social">
+        <a href="https://wa.me/5514997127128" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Facebook">📘</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Loja</h4>
+      <p><a href="#topo">Início</a></p>
+      <p><a href="#ofertas">Ofertas</a></p>
+      <p><a href="#departamentos">Departamentos</a></p>
+      <p><a href="#beneficios">Benefícios</a></p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Horário de funcionamento</h4>
+      <p>Segunda a sábado: 07h às 20h</p>
+      <p>Domingo: 07h às 13h</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <p>Av. Josefina Lorenzetti, S-1565<br>Pederneiras, SP</p>
+      <p><a href="https://wa.me/5514997127128" target="_blank" rel="noopener">(14) 99712-7128</a></p>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    &copy; 2026 Real Supermercado. Projeto acadêmico desenvolvido para o Bootcamp de Desenvolvimento Web Responsivo.
+  </div>
+</footer>
+
+<!-- ===================== BARRA FLUTUANTE DE CARRINHO (mobile) ===================== -->
+<div class="cart-bar" id="cartBar">
+  <div class="cart-bar-info">
+    <span class="cart-bar-pill" id="cartBarCount">0</span>
+    <span id="cartBarTotal">R$ 0,00</span>
+  </div>
+  <button type="button" id="cartBarOpen">Ver sacola</button>
+</div>
+
+<!-- ===================== ABA LATERAL DO CARRINHO ===================== -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-label="Carrinho de compras" aria-hidden="true">
+  <div class="cart-drawer-header">
+    <h2>Meu carrinho</h2>
+    <button type="button" class="cart-drawer-close" id="cartDrawerClose" aria-label="Fechar carrinho">✕</button>
+  </div>
+
+  <div class="cart-drawer-body">
+    <div class="cart-list" id="cartList"></div>
+
+    <div class="cart-empty" id="cartEmpty" hidden>
+      <span class="cart-empty-icon">🛒</span>
+      <h3>Seu carrinho está vazio</h3>
+      <p>Que tal dar uma olhada nas ofertas da semana?</p>
+      <a class="btn btn-primary-cta" href="#ofertas" id="cartEmptyLink">Ver ofertas</a>
+    </div>
+  </div>
+
+  <div class="cart-drawer-footer" id="cartDrawerFooter">
+    <div class="cart-summary-row">
+      <span>Subtotal</span>
+      <span id="cartSubtotal">R$ 0,00</span>
+    </div>
+    <div class="cart-summary-row cart-summary-total">
+      <span>Total</span>
+      <span id="cartTotal">R$ 0,00</span>
+    </div>
+    <button class="btn btn-primary-cta cart-checkout-btn" type="button" id="checkoutBtn">Finalizar pedido</button>
+  </div>
+</aside>
+
+<script src="js/script.js"></script>
+</body>
 </html>

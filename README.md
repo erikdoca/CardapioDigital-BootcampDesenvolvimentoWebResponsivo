@@ -1,49 +1,72 @@
-# Bar do Seu Tonho - Cardapio Digital
+# Real Supermercado — Site Responsivo
 
-Projeto desenvolvido para o Bootcamp de Desenvolvimento Web Responsivo.
+Projeto acadêmico desenvolvido para o **Bootcamp de Desenvolvimento Web Responsivo**, com o objetivo de construir uma página que se adapte a diferentes tamanhos de tela (desktop, tablet e smartphone).
 
-O site simula o cardapio de um bar ficticio. Nele, o visitante encontra
-informacoes sobre o estabelecimento, os itens do cardapio, os destaques da
-casa e dados de contato.
+## Descrição do projeto
 
-## Tecnologias
+Site institucional/e-commerce fictício do **Real Supermercado**, mercado de bairro localizado em Pederneiras, SP. A página apresenta:
 
-- HTML5
-- CSS3
-- JavaScript
-- Google Fonts
+- Cabeçalho com contato rápido e navegação
+- Seção de destaque (hero) com chamada para as ofertas
+- Departamentos do mercado
+- Grade de ofertas da semana, com carrinho de compras interativo (adicionar/remover quantidade)
+- Seção de benefícios (frete grátis, produtos frescos, formas de pagamento, clube de vantagens)
+- Formulário de cadastro no "Clube Real"
+- Rodapé com endereço, horário de funcionamento e contato
+- Aba lateral do carrinho (drawer), aberta pelo ícone 🛒 no cabeçalho ou pela barra flutuante no mobile, com listagem dos produtos adicionados, alteração de quantidade, remoção de itens e resumo do pedido
 
-O layout foi feito sem frameworks. Foram usados Flexbox, Grid e media queries
-para adaptar a pagina a telas de computador, tablet e celular.
+## Tecnologias utilizadas
 
-## Estrutura do projeto
+- **HTML5** semântico
+- **CSS3** puro, sem frameworks (Flexbox, Grid, `clamp`, media queries e variáveis CSS para o design system)
+- **JavaScript** puro (vanilla), sem bibliotecas, para:
+  - menu responsivo (hambúrguer no mobile)
+  - filtros de categoria
+  - stepper de quantidade e carrinho de compras
+  - formulário de cadastro
+- Fonte **Plus Jakarta Sans** (Google Fonts)
+
+Não foi utilizado nenhum framework CSS (como Bootstrap) — a responsividade foi construída manualmente com media queries, para reforçar o aprendizado dos conceitos de CSS responsivo.
+
+## Estrutura de pastas
 
 ```
-cardapio-digital/
+real-supermercado/
+├── index.html          # Estrutura da página, incluindo a aba lateral do carrinho
 ├── css/
-│   └── style.css
-├── img/
+│   └── styles.css      # Estilos, variáveis de design e media queries
 ├── js/
-│   └── script.js
-├── index.html
+│   └── script.js       # Interatividade (menu, filtros, carrinho)
+├── assets/
+│   └── logo.jpg         # Logotipo do supermercado
 └── README.md
 ```
 
-## Como executar
+## Breakpoints de responsividade
 
-Nao e necessario instalar dependencias. Basta abrir o arquivo `index.html` em
-um navegador.
+| Faixa            | Largura           | Comportamento                                              |
+|-------------------|--------------------|--------------------------------------------------------------|
+| Mobile (padrão)   | até 767px          | Menu hambúrguer, grade de produtos em 2 colunas, categorias em carrossel horizontal, barra de carrinho flutuante fixa |
+| Tablet            | 768px – 1023px     | Grade de produtos em 3 colunas, benefícios em 4 colunas       |
+| Desktop           | a partir de 1024px | Menu horizontal completo, grade de produtos em 4 colunas, hero em duas colunas, barra de carrinho flutuante oculta |
 
-Tambem e possivel iniciar um servidor local com Python:
+## Como instalar e executar
 
-```bash
-python -m http.server 8000
-```
+Não é necessário nenhum servidor ou instalação de dependências.
 
-Depois, acesse `http://localhost:8000`.
+1. Faça o download ou clone deste repositório.
+2. Abra o arquivo `index.html` diretamente no navegador (duplo clique) **ou**
+3. No VS Code, utilize a extensão **Live Server** e clique em "Go Live" para visualizar com recarregamento automático.
+
+Para testar a responsividade, utilize a ferramenta de inspeção do navegador (tecla **F12**) e o modo de simulação de dispositivos (ícone de celular/tablet).
+
+## Dados da loja (conteúdo fictício de exemplo)
+
+- **Endereço:** Avenida Josefina Lorenzetti, S-1565, Pederneiras, SP
+- **Telefone/WhatsApp:** (14) 99712-7128
 
 ## Integrantes
 
 - Erik Vinicius Pinheiro Doca
-- Joao Pedro Ferreira Viana
-- Gustavo da Silva Sebastião
+- João Pedro Ferreira Viana 
+-Gustavo da Silva Sebastião
