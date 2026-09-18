@@ -103,9 +103,49 @@ function setupScrollSpy() {
   update();
 }
 
+/* ---------- 3) Carrossel horizontal do mercado ---------- */
+function setupMarketCarousel() {
+  const carousels = document.querySelectorAll("[data-market-carousel]");
+  if (carousels.length === 0) return;
+
+  carousels.forEach((carousel) => {
+    const track = carousel.querySelector("[data-carousel-track]");
+    const prevBtn = carousel.querySelector("[data-carousel-prev]");
+    const nextBtn = carousel.querySelector("[data-carousel-next]");
+    if (!track || !prevBtn || !nextBtn) return;
+
+    function getStep() {
+      const slide = track.querySelector(".market-photo");
+      if (!slide) return track.clientWidth * 0.8;
+      const styles = getComputedStyle(track);
+      const gap = parseFloat(styles.columnGap || styles.gap) || 0;
+      return slide.getBoundingClientRect().width + gap;
+    }
+
+    function updateButtons() {
+      const maxScroll = track.scrollWidth - track.clientWidth;
+      const atStart = track.scrollLeft <= 2;
+      const atEnd = track.scrollLeft >= maxScroll - 2;
+      prevBtn.disabled = atStart;
+      nextBtn.disabled = atEnd || maxScroll <= 0;
+    }
+
+    function scrollByDir(dir) {
+      track.scrollBy({ left: dir * getStep(), behavior: "smooth" });
+    }
+
+    prevBtn.addEventListener("click", () => scrollByDir(-1));
+    nextBtn.addEventListener("click", () => scrollByDir(1));
+    track.addEventListener("scroll", updateButtons, { passive: true });
+    window.addEventListener("resize", updateButtons);
+    updateButtons();
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   setupStoreStatus();
   setupScrollSpy();
+  setupMarketCarousel();
 
   const year = document.getElementById("currentYear");
   if (year) year.textContent = new Date().getFullYear();

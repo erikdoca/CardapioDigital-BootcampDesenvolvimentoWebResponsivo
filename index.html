@@ -209,21 +209,50 @@
       <section class="hero-grid" id="inicio" data-section="Início">
         <div class="hero-card">
           <div class="glow glow--hero" aria-hidden="true"></div>
-          <div class="hero-content">
-            <span class="badge badge--orange badge--upper">
-              <span class="material-symbols-outlined" aria-hidden="true"
-                >store</span
+
+          <div class="hero-main">
+            <div class="hero-content">
+              <span class="badge badge--orange badge--upper">
+                <span class="material-symbols-outlined" aria-hidden="true"
+                  >store</span
+                >
+                Tradição e Amor no Bairro
+              </span>
+              <h1 class="hero-title">
+                Real Supermercado: O sabor caseiro que reúne a sua família
+              </h1>
+              <p class="hero-text">
+                Aqui você é atendido pelo nome. Carnes selecionadas, açougue
+                artesanal de verdade, quitanda fresquinha e o inconfundível frango
+                assado de fim de semana!
+              </p>
+            </div>
+
+            <div class="hero-actions">
+              <a
+                class="btn btn--hero-whatsapp"
+                href="https://wa.me/5514997127128"
+                target="_blank"
+                rel="noopener"
               >
-              Tradição e Amor no Bairro
-            </span>
-            <h1 class="hero-title">
-              Real Supermercado: O sabor caseiro que reúne a sua família
-            </h1>
-            <p class="hero-text">
-              Aqui você é atendido pelo nome. Carnes selecionadas, açougue
-              artesanal de verdade, quitanda fresquinha e o inconfundível frango
-              assado de fim de semana!
-            </p>
+                <span class="material-symbols-outlined" aria-hidden="true"
+                  >chat</span
+                >
+                WhatsApp (14) 99712-7128
+              </a>
+              <a class="btn btn--glass d-only" href="#assados">
+                <span class="material-symbols-outlined" aria-hidden="true"
+                  >outdoor_grill</span
+                >
+                Reserve seu Frango de Domingo
+              </a>
+              <a class="btn btn--light m-only" href="tel:1432522787">
+                <span class="material-symbols-outlined" aria-hidden="true"
+                  >call</span
+                >
+                Ligue (14) 3252-2787 • Pedidos
+              </a>
+            </div>
           </div>
 
           <figure class="photo hero-photo">
@@ -239,32 +268,6 @@
               Receitas de Família Feitas no Local
             </figcaption>
           </figure>
-
-          <div class="hero-actions">
-            <a
-              class="btn btn--hero-whatsapp"
-              href="https://wa.me/5514997127128"
-              target="_blank"
-              rel="noopener"
-            >
-              <span class="material-symbols-outlined" aria-hidden="true"
-                >chat</span
-              >
-              WhatsApp (14) 99712-7128
-            </a>
-            <a class="btn btn--glass d-only" href="#assados">
-              <span class="material-symbols-outlined" aria-hidden="true"
-                >outdoor_grill</span
-              >
-              Reserve seu Frango de Domingo
-            </a>
-            <a class="btn btn--light m-only" href="tel:1432522787">
-              <span class="material-symbols-outlined" aria-hidden="true"
-                >call</span
-              >
-              Ligue (14) 3252-2787 • Pedidos
-            </a>
-          </div>
         </div>
 
         <div class="hero-aside">
@@ -324,6 +327,27 @@
                   coração do bairro.</span
                 >
               </div>
+            </div>
+
+            <div class="hours-map">
+              <iframe
+                title="Mapa do Real Supermercado em Pederneiras"
+                src="https://maps.google.com/maps?q=Av.+Josefina+Lorenzetti,+S-1565,+Pederneiras,+SP&z=16&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe>
+              <a
+                class="hours-map-link"
+                href="https://www.google.com/maps/search/?api=1&query=Av.+Josefina+Lorenzetti,+S-1565,+Pederneiras,+SP"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="material-symbols-outlined" aria-hidden="true"
+                  >open_in_new</span
+                >
+                Abrir no Google Maps
+              </a>
             </div>
 
             <div class="hours-contacts m-only">
@@ -422,36 +446,63 @@
           </div>
         </div>
 
-        <div class="market-gallery" aria-label="Fotos do interior e das áreas do Real Supermercado">
-          <figure class="market-photo market-photo--large">
-            <img src="assets/img/loja/pictures/gondola-frutas01.jpg" alt="Hortifrúti organizado do Real Supermercado" loading="lazy" />
-            <figcaption>Hortifrúti</figcaption>
-          </figure>
+        <div class="market-carousel" data-market-carousel>
+          <button
+            type="button"
+            class="market-carousel-btn market-carousel-btn--prev"
+            data-carousel-prev
+            aria-label="Foto anterior"
+          >
+            <span class="material-symbols-outlined" aria-hidden="true">chevron_left</span>
+          </button>
 
-          <figure class="market-photo">
-            <img src="assets/img/loja/pictures/gondola-acougue01.jpg" alt="Área do açougue do Real Supermercado" loading="lazy" />
-            <figcaption>Açougue</figcaption>
-          </figure>
+          <div
+            class="market-gallery"
+            data-carousel-track
+            tabindex="0"
+            role="region"
+            aria-roledescription="carrossel"
+            aria-label="Fotos do interior e das áreas do Real Supermercado"
+          >
+            <figure class="market-photo">
+              <img src="assets/img/loja/pictures/gondola-frutas01.jpg" alt="Hortifrúti organizado do Real Supermercado" loading="lazy" />
+              <figcaption>Hortifrúti</figcaption>
+            </figure>
 
-          <figure class="market-photo">
-            <img src="assets/img/loja/pictures/gondola-alimentos03.jpg" alt="Corredor de alimentos e mercearia do Real Supermercado" loading="lazy" />
-            <figcaption>Mercearia</figcaption>
-          </figure>
+            <figure class="market-photo">
+              <img src="assets/img/loja/pictures/gondola-acougue01.jpg" alt="Área do açougue do Real Supermercado" loading="lazy" />
+              <figcaption>Açougue</figcaption>
+            </figure>
 
-          <figure class="market-photo">
-            <img src="assets/img/loja/pictures/gondola-bebidas01.jpg" alt="Área de bebidas do Real Supermercado" loading="lazy" />
-            <figcaption>Bebidas</figcaption>
-          </figure>
+            <figure class="market-photo">
+              <img src="assets/img/loja/pictures/gondola-alimentos03.jpg" alt="Corredor de alimentos e mercearia do Real Supermercado" loading="lazy" />
+              <figcaption>Mercearia</figcaption>
+            </figure>
 
-          <figure class="market-photo">
-            <img src="assets/img/loja/pictures/gondola-limpeza01.jpg" alt="Corredor de produtos de limpeza do Real Supermercado" loading="lazy" />
-            <figcaption>Limpeza</figcaption>
-          </figure>
+            <figure class="market-photo">
+              <img src="assets/img/loja/pictures/gondola-bebidas01.jpg" alt="Área de bebidas do Real Supermercado" loading="lazy" />
+              <figcaption>Bebidas</figcaption>
+            </figure>
 
-          <figure class="market-photo market-photo--wide">
-            <img src="assets/img/loja/pictures/gondola-pessoais03.jpg" alt="Corredor de cuidados pessoais do Real Supermercado" loading="lazy" />
-            <figcaption>Variedade para o dia a dia</figcaption>
-          </figure>
+            <figure class="market-photo">
+              <img src="assets/img/loja/pictures/gondola-limpeza01.jpg" alt="Corredor de produtos de limpeza do Real Supermercado" loading="lazy" />
+              <figcaption>Limpeza</figcaption>
+            </figure>
+
+            <figure class="market-photo">
+              <img src="assets/img/loja/pictures/gondola-pessoais03.jpg" alt="Corredor de cuidados pessoais do Real Supermercado" loading="lazy" />
+              <figcaption>Variedade para o dia a dia</figcaption>
+            </figure>
+          </div>
+
+          <button
+            type="button"
+            class="market-carousel-btn market-carousel-btn--next"
+            data-carousel-next
+            aria-label="Próxima foto"
+          >
+            <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span>
+          </button>
         </div>
       </section>
 
