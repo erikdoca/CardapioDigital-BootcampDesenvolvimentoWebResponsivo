@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     />
-    <title>Real Supermercado — O sabor caseiro que reúne a sua família</title>
+    <title>Real Supermercado</title>
     <meta
       name="description"
       content="Real Supermercado em Pederneiras, SP: frango assado de fim de semana, linguiças artesanais, pizzas semiprontas, pães fresquinhos e verduras frescas todos os dias."
@@ -29,55 +29,50 @@
     <!-- ===================== CABEÇALHO ===================== -->
     <header class="site-header">
       <!-- Barra de informações (desktop) -->
-     <div class="topbar d-only">
-  <div class="container topbar-inner">
-
-    <div class="topbar-left">
-
-      <span class="topbar-tag">
-        <span class="material-symbols-outlined" aria-hidden="true">
-          storefront
-        </span>
-        Mercado de Bairro
-      </span>
-
-      <div
-        class="topbar-marquee"
-        role="marquee"
-        aria-label="Destaques do Real Supermercado"
-      >
-        <div class="topbar-marquee-track">
-
-          <span class="topbar-marquee-item">
-            <span class="material-symbols-outlined" aria-hidden="true">
-              local_fire_department
+      <div class="topbar d-only">
+        <div class="container topbar-inner">
+          <div class="topbar-left">
+            <span class="topbar-tag">
+              <span class="material-symbols-outlined" aria-hidden="true">
+                storefront
+              </span>
+              Mercado de Bairro
             </span>
-            Real Supermercado • O sabor e o carinho do seu bairro • Tradição da
-            vizinhança • Encomende o Frango Assado pelo WhatsApp • Verduras
-            Frescas todos os dias a partir das 09:30h •
-          </span>
 
-          <span class="topbar-marquee-item" aria-hidden="true">
-            <span class="material-symbols-outlined">
-              local_fire_department
-            </span>
-            Real Supermercado • O sabor e o carinho do seu bairro • Tradição da
-            vizinhança • Encomende o Frango Assado pelo WhatsApp • Verduras
-            Frescas todos os dias a partir das 09:30h •
-          </span>
+            <div
+              class="topbar-marquee"
+              role="marquee"
+              aria-label="Destaques do Real Supermercado"
+            >
+              <div class="topbar-marquee-track">
+                <span class="topbar-marquee-item">
+                  <span class="material-symbols-outlined" aria-hidden="true">
+                    local_fire_department
+                  </span>
+                  Real Supermercado • O sabor e o carinho do seu bairro •
+                  Tradição da vizinhança • Encomende o Frango Assado pelo
+                  WhatsApp • Verduras Frescas todos os dias a partir das 09:30h
+                  •
+                </span>
 
+                <span class="topbar-marquee-item" aria-hidden="true">
+                  <span class="material-symbols-outlined">
+                    local_fire_department
+                  </span>
+                  Real Supermercado • O sabor e o carinho do seu bairro •
+                  Tradição da vizinhança • Encomende o Frango Assado pelo
+                  WhatsApp • Verduras Frescas todos os dias a partir das 09:30h
+                  •
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="topbar-right">
+            <span class="topbar-hours"> </span>
+          </div>
         </div>
       </div>
-
-    </div>
-
-    <div class="topbar-right">
-      <span class="topbar-hours">
-      </span>
-    </div>
-
-  </div>
-</div>
 
       <!-- Marca + contatos -->
       <div class="header-main">
@@ -110,9 +105,6 @@
           <div class="store-status m-only" id="storeStatus" role="status">
             <span class="store-status-dot" aria-hidden="true"></span>
             <span id="storeStatusText">Aberto hoje</span>
-          </div>
-
-         
           </div>
         </div>
       </div>
@@ -223,8 +215,8 @@
               </h1>
               <p class="hero-text">
                 Aqui você é atendido pelo nome. Carnes selecionadas, açougue
-                artesanal de verdade, quitanda fresquinha e o inconfundível frango
-                assado de fim de semana!
+                artesanal de verdade, quitanda fresquinha e o inconfundível
+                frango assado de fim de semana!
               </p>
             </div>
 
@@ -256,11 +248,16 @@
           </div>
 
           <figure class="photo hero-photo">
-            <img
-              src="assets/img/hero-mercado.jpg"
-              alt="Balcão do açougue com frango assado, linguiças frescas e ervas"
-              loading="lazy"
-            />
+            <!-- muted + playsinline são obrigatórios para o autoplay funcionar no celular -->
+            <video
+              src="assets/img/loja/videos/video-assado02.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="auto"
+              aria-label="Frangos assados e joelho de porco na assadeira do Real Supermercado"
+            ></video>
             <figcaption class="photo-caption">
               <span class="material-symbols-outlined" aria-hidden="true"
                 >verified</span
@@ -426,19 +423,24 @@
         <div class="market-showcase-head">
           <div class="market-showcase-copy">
             <span class="badge badge--orange badge--upper">
-              <span class="material-symbols-outlined" aria-hidden="true">store</span>
+              <span class="material-symbols-outlined" aria-hidden="true"
+                >store</span
+              >
               Conheça o nosso mercado
             </span>
             <h2 class="section-title">
               Mercado Real, um lugar organizado e preparado para te atender.
             </h2>
             <p class="section-text market-showcase-text">
-              Um espaço pensado para facilitar suas compras, com variedade, organização e tudo o que você precisa no dia a dia.
+              Um espaço pensado para facilitar suas compras, com variedade,
+              organização e tudo o que você precisa no dia a dia.
             </p>
           </div>
 
           <div class="market-showcase-note">
-            <span class="material-symbols-outlined" aria-hidden="true">shopping_cart</span>
+            <span class="material-symbols-outlined" aria-hidden="true"
+              >shopping_cart</span
+            >
             <div>
               <strong>Qualidade e variedade</strong>
               <span>Em um só lugar, perto de você.</span>
@@ -453,7 +455,9 @@
             data-carousel-prev
             aria-label="Foto anterior"
           >
-            <span class="material-symbols-outlined" aria-hidden="true">chevron_left</span>
+            <span class="material-symbols-outlined" aria-hidden="true"
+              >chevron_left</span
+            >
           </button>
 
           <div
@@ -465,32 +469,56 @@
             aria-label="Fotos do interior e das áreas do Real Supermercado"
           >
             <figure class="market-photo">
-              <img src="assets/img/loja/pictures/gondola-frutas01.jpg" alt="Hortifrúti organizado do Real Supermercado" loading="lazy" />
+              <img
+                src="assets/img/loja/pictures/gondola-frutas01.jpg"
+                alt="Hortifrúti organizado do Real Supermercado"
+                loading="lazy"
+              />
               <figcaption>Hortifrúti</figcaption>
             </figure>
 
             <figure class="market-photo">
-              <img src="assets/img/loja/pictures/gondola-acougue01.jpg" alt="Área do açougue do Real Supermercado" loading="lazy" />
+              <img
+                src="assets/img/loja/pictures/gondola-acougue01.jpg"
+                alt="Área do açougue do Real Supermercado"
+                loading="lazy"
+              />
               <figcaption>Açougue</figcaption>
             </figure>
 
             <figure class="market-photo">
-              <img src="assets/img/loja/pictures/gondola-alimentos03.jpg" alt="Corredor de alimentos e mercearia do Real Supermercado" loading="lazy" />
+              <img
+                src="assets/img/loja/pictures/gondola-alimentos03.jpg"
+                alt="Corredor de alimentos e mercearia do Real Supermercado"
+                loading="lazy"
+              />
               <figcaption>Mercearia</figcaption>
             </figure>
 
             <figure class="market-photo">
-              <img src="assets/img/loja/pictures/gondola-bebidas01.jpg" alt="Área de bebidas do Real Supermercado" loading="lazy" />
+              <img
+                src="assets/img/loja/pictures/gondola-bebidas01.jpg"
+                alt="Área de bebidas do Real Supermercado"
+                loading="lazy"
+              />
               <figcaption>Bebidas</figcaption>
             </figure>
 
             <figure class="market-photo">
-              <img src="assets/img/loja/pictures/gondola-limpeza01.jpg" alt="Corredor de produtos de limpeza do Real Supermercado" loading="lazy" />
+              <img
+                src="assets/img/loja/pictures/gondola-limpeza01.jpg"
+                alt="Corredor de produtos de limpeza do Real Supermercado"
+                loading="lazy"
+              />
               <figcaption>Limpeza</figcaption>
             </figure>
 
             <figure class="market-photo">
-              <img src="assets/img/loja/pictures/gondola-pessoais03.jpg" alt="Corredor de cuidados pessoais do Real Supermercado" loading="lazy" />
+              <img
+                src="assets/img/loja/pictures/gondola-pessoais03.jpg"
+                alt="Corredor de cuidados pessoais do Real Supermercado"
+                loading="lazy"
+              />
               <figcaption>Variedade para o dia a dia</figcaption>
             </figure>
           </div>
@@ -501,7 +529,9 @@
             data-carousel-next
             aria-label="Próxima foto"
           >
-            <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span>
+            <span class="material-symbols-outlined" aria-hidden="true"
+              >chevron_right</span
+            >
           </button>
         </div>
       </section>
@@ -535,7 +565,7 @@
                 alt="Frango assado dourado com batatas coradas e farofa"
                 loading="lazy"
               />
-              <span class="photo-tag">Acompanha Batatas e Farofa</span>
+              <span class="photo-tag">Acompanha Farofa</span>
             </figure>
 
             <div class="sides">
@@ -725,7 +755,7 @@
             <span class="material-symbols-outlined" aria-hidden="true"
               >chat</span
             >
-            Encomendar por Quilo
+            Encomendar
           </a>
         </div>
 
@@ -740,8 +770,9 @@
             <div class="sausage-info">
               <h3 class="card-title">Rúcula com Queijo</h3>
               <p class="card-text">
-                Cortes nobres suínos combinados com folhas frescas de rúcula e
-                queijo de primeira que derrete na medida certa na brasa.
+                Carne suína selecionada com rúcula fresquinha e queijo que
+                derrete na brasa. Um sabor leve e diferente para o seu
+                churrasco.
               </p>
             </div>
             <span class="sausage-tag sausage-tag--green"
@@ -752,38 +783,37 @@
           <article class="sausage-card">
             <img
               class="sausage-photo"
-              src="assets/img/linguica-mandioca.jpg"
-              alt="Linguiça artesanal de mandioca com bacon"
+              src=""
+              alt="Linguiça artesanal tradicional"
               loading="lazy"
             />
             <div class="sausage-info">
-              <h3 class="card-title">Mandioca com Bacon</h3>
+              <h3 class="card-title">Tradicional</h3>
               <p class="card-text">
-                A queridinha do churrasco: pedacinhos macios de mandioca cozida
-                envoltos em bacon defumado crocante e tempero artesanal.
+                A linguiça de sempre, do jeito que o bairro gosta: carne suína e
+                tempero caseiro na medida. Vai bem na brasa, na frigideira ou no
+                feijão.
               </p>
             </div>
-            <span class="sausage-tag sausage-tag--orange"
-              >Sabor Inigualável</span
-            >
+            <span class="sausage-tag sausage-tag--orange">A Mais Pedida</span>
           </article>
 
           <article class="sausage-card">
             <img
               class="sausage-photo"
-              src="assets/img/linguica-apimentada.jpg"
-              alt="Linguiça artesanal apimentada com páprica"
+              src=""
+              alt="Linguiça artesanal de queijo c/ azeitona"
               loading="lazy"
             />
             <div class="sausage-info">
-              <h3 class="card-title">Apimentada Especial</h3>
+              <h3 class="card-title">Queijo c/ Azeitona</h3>
               <p class="card-text">
-                Toque equilibrado e saboroso de pimenta calabresa selecionada e
-                páprica defumada. Ideal para grelhar ou petiscar.
+                Pedacinhos de queijo e azeitona misturados à carne temperada.
+                Cremosa por dentro e dourada por fora, perfeita para petiscar.
               </p>
             </div>
             <span class="sausage-tag sausage-tag--navy"
-              >Picância Suave e Marcante</span
+              >Queridinha do Petisco</span
             >
           </article>
         </div>
@@ -799,7 +829,7 @@
             aria-hidden="true"
             >scale</span
           >
-          Encomendar por Quilo no WhatsApp
+          Encomendar no WhatsApp
         </a>
       </section>
 
@@ -850,11 +880,11 @@
               loading="lazy"
             />
             <div class="pizza-body">
-              <h3 class="pizza-name">Calabresa Especial</h3>
+              <h3 class="pizza-name">Calabresa</h3>
               <p class="pizza-desc">
                 <span class="d-only"
-                  >Calabresa artesanal fatiada fininha, cebola fresca, azeitonas
-                  pretas e orégano chileno.</span
+                  >Calabresa fatiada fininha, cebola fresca, azeitonas e
+                  orégano.</span
                 >
                 <span class="m-only">Fatias finas e cebola</span>
               </p>
@@ -864,43 +894,6 @@
               <a
                 class="pizza-reserve"
                 href="https://wa.me/5514997127128?text=Quero%20reservar%20a%20Pizza%20Calabresa%20Especial"
-                target="_blank"
-                rel="noopener"
-              >
-                <span
-                  class="material-symbols-outlined m-only"
-                  aria-hidden="true"
-                  >add_task</span
-                >
-                Reservar
-              </a>
-            </div>
-          </article>
-
-          <article class="pizza-card">
-            <img
-              class="pizza-photo"
-              src="assets/img/pizza-mista.jpg"
-              alt="Pizza mista semipronta"
-              loading="lazy"
-            />
-            <div class="pizza-body">
-              <h3 class="pizza-name">
-                Mista<span class="m-only"> Tradicional</span>
-              </h3>
-              <p class="pizza-desc">
-                <span class="d-only"
-                  >Presunto de qualidade magro ralado, bastante muçarela de
-                  primeira, rodelas de tomate e azeitonas.</span
-                >
-                <span class="m-only">Presunto e mussarela</span>
-              </p>
-            </div>
-            <div class="pizza-foot">
-              <span class="pizza-pickup d-only">Retirada rápida</span>
-              <a
-                class="pizza-reserve"
-                href="https://wa.me/5514997127128?text=Quero%20reservar%20a%20Pizza%20Mista"
                 target="_blank"
                 rel="noopener"
               >
@@ -928,10 +921,10 @@
               </h3>
               <p class="pizza-desc">
                 <span class="d-only"
-                  >Lombo canadense fatiado suave coberto com o legítimo Catupiry
-                  cremoso e cheiro-verde.</span
+                  >Lombo fatiado suave coberto com Catupiry cremoso e
+                  orégano.</span
                 >
-                <span class="m-only">Lombo canadense suave</span>
+                <span class="m-only">Lombo suave</span>
               </p>
             </div>
             <div class="pizza-foot">
@@ -986,6 +979,41 @@
               </a>
             </div>
           </article>
+
+          <article class="pizza-card">
+            <img
+              class="pizza-photo"
+              src="assets/img/pizza-mista.jpg"
+              alt="Pizza semipronta meia a meia, com metade mista e metade quatro queijos"
+              loading="lazy"
+            />
+            <div class="pizza-body">
+              <h3 class="pizza-name">Meia a Meia</h3>
+              <p class="pizza-desc">
+                <span class="d-only"
+                  >Não consegue escolher? Temos diversas opções com dois
+                  sabores, metade de cada.</span
+                >
+                <span class="m-only">Dois sabores em uma</span>
+              </p>
+            </div>
+            <div class="pizza-foot">
+              <span class="pizza-pickup d-only">Retirada rápida</span>
+              <a
+                class="pizza-reserve"
+                href="https://wa.me/5514997127128?text=Quero%20reservar%20uma%20Pizza%20Meia%20a%20Meia%20com%20os%20sabores%3A%20"
+                target="_blank"
+                rel="noopener"
+              >
+                <span
+                  class="material-symbols-outlined m-only"
+                  aria-hidden="true"
+                  >add_task</span
+                >
+                Reservar
+              </a>
+            </div>
+          </article>
         </div>
 
         <div class="info-box">
@@ -1001,7 +1029,6 @@
           </p>
         </div>
       </section>
-      
 
       <!-- ===================== PÃES FRESQUINHOS ===================== -->
       <section class="panel" id="paes" data-section="Pães">
@@ -1316,7 +1343,7 @@
               </div>
             </dl>
             <span class="pill pill--peach footer-pill d-only"
-              >Frango Assado: Sáb e Dom</span
+              >Frango Assado: Dom</span
             >
           </div>
 
@@ -1326,8 +1353,8 @@
               <li>• Frango Assado &amp; Joelho de Porco Pururucado</li>
               <li>• Maionese Caseira da Família (1/2kg e 1kg)</li>
               <li>
-                • Linguiças Artesanais: Rúcula c/ Queijo, Mandioca c/ Bacon e
-                Apimentada
+                • Linguiças Artesanais: Rúcula c/ Queijo, Tradicional e Queijo
+                c/ Azeitona
               </li>
               <li>• Pizzas Semiprontas (*retirada no balcão)</li>
               <li>• Pães Fresquinhos de Manhã e à Tarde</li>
