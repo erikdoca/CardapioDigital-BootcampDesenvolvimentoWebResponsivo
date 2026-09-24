@@ -1,14 +1,14 @@
-# Real Supermercado — Site Responsivo
+# Real Supermercado — Cardápio Digital
 
-Projeto acadêmico desenvolvido para o **Bootcamp de Desenvolvimento Web Responsivo**, com o objetivo de construir uma página que se adapte a diferentes tamanhos de tela (desktop, tablet e smartphone).
+Projeto acadêmico desenvolvido para o **Bootcamp de Desenvolvimento Web Responsivo**. O objetivo é apresentar um cardápio digital que se adapte a diferentes tamanhos de tela (desktop, tablet e smartphone).
 
-O site foi construído a partir de dois layouts feitos previamente pelo grupo, um para desktop e outro para mobile, e cada versão segue o seu layout de origem.
+O site foi planejado a partir de layouts para desktop e mobile, mantendo a mesma identidade visual e reorganizando os conteúdos conforme o espaço disponível.
 
 ## Descrição do projeto
 
 Site institucional do **Real Supermercado**, mercado de bairro localizado em Pederneiras, SP. A página apresenta as especialidades da casa e direciona os pedidos para o WhatsApp da loja.
 
-Seções da página:
+Conteúdos apresentados:
 
 - Cabeçalho com contatos, navegação por categorias e faixa animada de destaques
 - Seção de destaque (hero) com a apresentação da loja
@@ -37,15 +37,15 @@ Não foi utilizado nenhum framework CSS (como Bootstrap) — a responsividade fo
 ## Estrutura de pastas
 
 ```
-real-supermercado/
+cardapio-digital/
 ├── index.html          # Estrutura da página
 ├── css/
-│   └── styles.css      # Estilos, variáveis de design e media queries
+│   └── styles.css      # Estilos, layout e media queries
 ├── js/
-│   └── script.js       # Interatividade (selo de aberto/fechado, seção atual)
+│   └── script.js       # Interatividade e atualização de status
 ├── assets/
-│   ├── logo.jpg        # Logotipo do supermercado
-│   └── img/            # Fotos das seções
+│   ├── logo.jpg        # Logotipo
+│   └── img/            # Fotos, artes promocionais e vídeos
 └── README.md
 ```
 
@@ -67,6 +67,29 @@ Não é necessário nenhum servidor ou instalação de dependências.
 
 Para testar a responsividade, utilize a ferramenta de inspeção do navegador (tecla **F12**) e o modo de simulação de dispositivos (ícone de celular/tablet).
 
+## Checklist de testes
+
+- Testar a abertura do `index.html` no Chrome, Firefox ou Edge.
+- Verificar as larguras de 375px, 768px e 1024px.
+- Confirmar que o menu, as âncoras, os botões de telefone e os links do WhatsApp funcionam.
+- Conferir o carregamento das imagens e dos vídeos locais.
+- Conferir a leitura e a navegação do conteúdo em telas pequenas sem rolagem horizontal indevida.
+
+## Entregas do módulo
+
+### Primeira entrega
+
+- Repositório versionado com a estrutura inicial do projeto.
+- Pastas organizadas por responsabilidade (`css`, `js` e `assets`).
+- README com descrição, tecnologias e instruções de execução.
+- Histórico de commits do desenvolvimento.
+
+### Segunda entrega
+
+- Demonstração do comportamento responsivo em desktop, tablet e smartphone.
+- Repositório Git atualizado.
+- Projeto completo para envio no formato solicitado pelo coordenador.
+
 ## Dados da loja
 
 - **Endereço:** Avenida Josefina Lorenzetti, S-1565, Pederneiras, SP
@@ -74,9 +97,9 @@ Para testar a responsividade, utilize a ferramenta de inspeção do navegador (t
 - **Telefone fixo:** (14) 3252-2787
 - **Horários:** segunda a sexta, 08:00h às 12:30h e 14:00h às 20:00h; sábado, 08:00h às 20:00h; domingo, 08:00h às 13:00h
 
-## Créditos das imagens
+## Créditos e direitos de uso
 
-As fotos da pasta `assets/img/` foram obtidas no [Pexels](https://www.pexels.com), sob licença livre para uso, inclusive comercial, sem exigência de atribuição.
+As imagens de produtos, as artes promocionais de linguiças e os vídeos da loja foram fornecidos para a composição deste projeto. Antes de publicar o site fora do contexto acadêmico, confirme com o responsável pelo estabelecimento a autorização de uso das imagens, do logotipo e das informações comerciais. As fontes externas usadas na interface são o [Google Fonts](https://fonts.google.com) e os ícones Material Symbols.
 
 ## Integrantes
 
